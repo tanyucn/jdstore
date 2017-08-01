@@ -5,6 +5,7 @@ root 'products#index'
 
    namespace :admin do
      resources :products
+     resources :orders
    end
 
      resources :products do
@@ -21,7 +22,7 @@ root 'products#index'
       end
 
       resources :cart_items
-      
+
         resources :orders do
           member do
             post :pay_with_alipay
@@ -32,5 +33,7 @@ root 'products#index'
        namespace :account do
          resources :orders
        end
+
+
 
 end
