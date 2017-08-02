@@ -14,3 +14,12 @@ u.password_confirmation = "qweqwe"   # 最少要六码
 
 u.is_admin = true
 u.save
+
+product.create!(title: "Iphone7",
+description: "手机"
+price: 5800,
+quantity: 15,
+image:open("http://img1.imgtn.bdimg.com/it/u=2561041006,2265090883&fm=11&gp=0.jpg")
+
+
+)
