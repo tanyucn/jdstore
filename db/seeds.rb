@@ -1,5 +1,5 @@
 # Initialize Admin User
-if User.find_by(email: "admin@test.com").nil?
+if User.find_by(email: "tanyumr@gmail.com").nil?
   u = User.new
   u.email = "tanyumr@gmail.com"           # 可以改成自己的 email
   u.password = "qweqwe"                   # 最少要六码
@@ -12,25 +12,35 @@ else
 end
 
 
+
+
  # Initialize Product
 
- Product.create!(title: "QC-35",
-   description: "耳机",
-   price: 2800,
-   quantity: 5,
-   image: open("https://images-cn.ssl-images-amazon.com/images/I/41bVSMLUllL._AC_UL320_SR320,320_.jpg")
+ Product.create!(title: "MacBook Air",
+   description: "Mac",
+   price: 8000,
+   quantity: 15,
+   image: open("https://ws4.sinaimg.cn/large/006tNc79gy1fi6n7vsuw6j31hc0zkdia.jpg")
    )
 
- Product.create!(title: "Iphone7",
-   description: "手机",
-   price: 5000,
-   quantity: 5,
-   image: open("https://images-cn.ssl-images-amazon.com/images/I/51q3gdJGenL._SL800_.jpg")
+ Product.create!(title: "MacBook Pro",
+   description: "Mac",
+   price: 12000,
+   quantity: 25,
+   image: open("https://img.alicdn.com/imgextra/i2/197232874/TB2Y8sjxJBopuFjSZPcXXc9EpXa_!!197232874.jpg")
    )
 
- Product.create!(title: "Cherry Keyboard",
-   description: "G80-3000键盘",
-   price: 2800,
+ Product.create!(title: "MacBook Pro+",
+   description: "Mac",
+   price: 15000,
    quantity: 5,
-   image: open("https://images-cn.ssl-images-amazon.com/images/I/41LN-bXtA7L._AC_UL320_SR320,320_.jpg")
+   image: open("https://img.alicdn.com/imgextra/i2/1917047079/TB27bfoubplpuFjSspiXXcdfFXa_!!1917047079.jpg")
+   )
+
+
+ Product.create!(title: "book",
+   description: "book&coffee",
+   price: 200,
+   quantity: 250,
+   image: open(File.join(Rails.root, "/app/assets/images/products/book.jpg"))
    )
