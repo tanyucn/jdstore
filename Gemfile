@@ -42,6 +42,7 @@ gem 'figaro'
 
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'pry'
   gem 'awesome_rails_console'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
