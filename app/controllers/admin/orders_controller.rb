@@ -14,6 +14,7 @@ class Admin::OrdersController < ApplicationController
   end
 
 
+
   def ship
     @order = Order.find(params[:id])
     @order.ship!
