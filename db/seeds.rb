@@ -13,6 +13,7 @@ end
 
 
 
+
  # Initialize Product
 
  Product.create!(title: "MacBook Air",
