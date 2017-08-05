@@ -23,7 +23,6 @@ end
    image: open("https://ws4.sinaimg.cn/large/006tNc79gy1fi6n7vsuw6j31hc0zkdia.jpg")
    )
 
-
  Product.create!(title: "MacBook Pro",
    description: "Mac Pro",
    price: 12000,
